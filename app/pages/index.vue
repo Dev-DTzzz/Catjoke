@@ -73,6 +73,13 @@
 </template>
 
 <script setup lang="ts">
+import { useAsset } from '~/composables/useAsset'
+
+const getImageUrl = (path: string) => {
+  if (!path) return ''
+  return useAsset(path)
+}
+
 const currentCatImage = useState<string | null>('cat-image', () => null)
 const { getRandomCatImage } = useCatImage()
 const { joke, isLoading: jokeLoading, error: jokeError, fetchJoke } = useJoke()

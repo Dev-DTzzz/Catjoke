@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   // Глобальные CSS
   css: ['~/assets/css/main.css'],
-  
+
   // Правила рендеринга
   routeRules: {
     '/': { prerender: true },           // SSG - главная
@@ -21,6 +21,8 @@ export default defineNuxtConfig({
 
   // SEO и Meta теги
   app: {
+    baseURL: '/Catjoke/',  
+    buildAssetsDir: '/static/',
     head: {
       title: 'CatJoke - Смешные коты и шутки',
       titleTemplate: '%s | CatJoke',

@@ -76,6 +76,13 @@
 </template>
 
 <script setup lang="ts">
+import { useAsset } from '~/composables/useAsset'
+
+const getImageUrl = (path: string) => {
+  if (!path) return ''
+  return useAsset(path)
+}
+
 interface Cat {
     image: string
     name: string

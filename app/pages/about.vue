@@ -138,7 +138,14 @@
 </template>
 
 <script setup lang="ts">
+
 import { useCatImage } from '~/composables/useCatImage'
+import { useAsset } from '~/composables/useAsset'
+
+const getImageUrl = (path: string) => {
+  if (!path) return ''
+  return useAsset(path)
+}
 
 const { getAllCatImages } = useCatImage()
 const catCount = getAllCatImages().length
