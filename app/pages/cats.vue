@@ -30,7 +30,7 @@
                     <div class="relative aspect-square p-4">
                         <div
                             class="w-full h-full rounded-xl overflow-hidden bg-linear-to-br from-purple-100 to-blue-100">
-                            <NuxtImg :src="cat.image" :alt="cat.name"
+                            <img :src="`/Catjoke/images/${cat.image.split('/').pop()}`" :alt="cat.name"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                                 loading="lazy" format="webp" quality="70" @error="(e) => handleImageError(e, index)" />
                         </div>

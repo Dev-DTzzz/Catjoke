@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   // Модули
   modules: [
     '@nuxt/ui',
-    '@nuxt/image',
+    // '@nuxt/image',
   ],
 
   // Глобальные CSS
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         { property: 'og:image', content: '/og-image.jpg' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/CatJoke.png' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://catjoke.com' },
       ],
       htmlAttrs: {

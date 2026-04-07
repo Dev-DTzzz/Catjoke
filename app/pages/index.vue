@@ -7,9 +7,9 @@
                 <div class="w-full h-full flex items-center justify-center overflow-hidden">
                     <ClientOnly>
                         <!-- Показываем изображение только когда оно есть -->
-                        <NuxtImg 
+                        <img
                             v-if="currentCatImage" 
-                            :src="currentCatImage" 
+                            :src="`/Catjoke/images/${currentCatImage.split('/').pop()}`" 
                             alt="Random cat"
                             class="w-full h-full object-cover"
                             loading="lazy"
