@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         { property: 'og:image', content: '/og-image.jpg' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: '/Catjoke/favicon.ico' },
         { rel: 'canonical', href: 'https://catjoke.com' },
       ],
       htmlAttrs: {
